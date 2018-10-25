@@ -12,10 +12,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = {"G:\\SeleniumCucumberWorkSpace\\BCSProject\\src\\main\\java\\com\\sen\\features\\homePage.feature"},
                  glue = {"com\\sen\\tests"},
                  monochrome = true,
-                 plugin = {"pretty","json:target/reports/jsonreport/index.json","html:target/reports/htmlreport","junit:target/reports/xmlreport.xml"},
+                 plugin = {"pretty","json:target/reports/jsonreport/index.json","html:target/reports/htmlreport","junit:target/reports/xmlreport.xml","com.cucumber.listener.ExtentCucumberFormatter:output\\ExtentReport.html"},
                  dryRun = false)
 
 public class TestRun {
 
 }
-//,"G:\\SeleniumCucumberWorkSpace\\BCSProject\\src\\main\\java\\com\\sen\\features\\searchpage.feature"
+//Removed the previous comment
