@@ -53,7 +53,7 @@ public class HomePageSteps extends TestBase{
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Assert.assertEquals(test.HOMEPAGE_TITLE, homepage.homePageTitle());
 	}
-
+	
 	@Then("^user clicks on Job seeker header link$")
 	public void user_clicks_on_Job_seeker_header_link() throws IOException{
 		homepage.clickOnLoginButton();
